@@ -11,13 +11,13 @@ int main(int argc, char *argv[]) {
 	scanf("%d", &input);
 	
 	if(input>0)
-	  printf("이 수는 양수입니다.\n");
+	  printf("절댓값은 %d 입니다.\n", input);
 	  
     else if(input<0)
-	  printf("이 수는 음수입니다.\n");
+	  printf("절댓값은 %d입니다.\n", -input);
 	  
 	else
-	  printf("이 수는 0입니다.\n");
+	  printf("절댓값은  0입니다.\n", input);
 	  	
 	system("PAUSE");  	
 	return 0;

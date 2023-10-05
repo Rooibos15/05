@@ -5,17 +5,26 @@
 
 int main(int argc, char *argv[]) {
 	
-	int sum = 0;
+	int answer = 40;
 	int n;
-	int i;
+	int trial = 0; 
 	
-	printf("수를 입력하세요: ");
-	scanf("%d", &n); 
+	do
+	{
+		printf("답을 적어주세요 : \n");
+		scanf("%d", &n);
+		
+		if(n < answer)
+		  printf("정답보다 작습니다.\n");
+		  
+		else if(n > answer)
+		  printf("정답보다 큽니다.\n");
 	
-	for (i=0; i<=n; i++)
-	  sum = sum + i;
-	  
-	printf("값은 %d입니다.", sum);
+		trial++;
+	}
+	while(n != answer);
+	
+	printf("정답입니다! 당신의 시도 횟수는 %d번 입니다.\n", trial);
 	       
 	system("PAUSE");  	
 	return 0;

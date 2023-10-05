@@ -5,16 +5,18 @@
 
 int main(int argc, char *argv[]) {
 	
-	char c;
-	int n = 0;
+	int sum = 0;
+	int n;
+	int i;
 	
-	printf("문자를 입력하세요: ");
+	printf("수를 입력하세요: ");
+	scanf("%d", &n); 
 	
-	while((c=getchar() ) !='\n')
-	
-	    if(c>='0' && c <='9')
-	       n++;
-	       printf("숫자의 개수는 %d개 입니다.", n);
+	for (i=0; i<=n; i++)
+	  sum = sum + i;
+	  
+	printf("값은 %d입니다.", sum);
+	       
 	system("PAUSE");  	
 	return 0;
 }

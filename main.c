@@ -5,20 +5,16 @@
 
 int main(int argc, char *argv[]) {
 	
-	int input;
+	char c;
+	int n = 0;
 	
-	printf("정수 하나를 입력하세요: ");
-	scanf("%d", &input);
+	printf("문자를 입력하세요: ");
 	
-	if(input>0)
-	  printf("절댓값은 %d 입니다.\n", input);
-	  
-    else if(input<0)
-	  printf("절댓값은 %d입니다.\n", -input);
-	  
-	else
-	  printf("절댓값은  0입니다.\n", input);
-	  	
+	while((c=getchar() ) !='\n')
+	
+	    if(c>='0' && c <='9')
+	       n++;
+	       printf("숫자의 개수는 %d개 입니다.", n);
 	system("PAUSE");  	
 	return 0;
 }
